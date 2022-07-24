@@ -47,8 +47,8 @@ dark blue: #457EC1
 }
 
 .about--border:hover {
-    max-width: 780px;
-    transition: 0.2s;
+    max-width: 765px;
+    transition: 0.15s;
 }
 
 .about--text-container {
@@ -101,6 +101,7 @@ li {
 
 .navbar-option {
     color: white;
+    font-size: 18px;
     margin: 0px;
     text-decoration: none;
     text-align: center;
@@ -118,14 +119,14 @@ li {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
-    max-width: 870px;
+    max-width: 880px;
     border-radius: 0px;
     box-shadow: 0px 4px 3px #cf9728;
 }
 
 .section-card:hover {
     max-width: 890px;
-    transition: 0.2s;
+    transition: 0.15s;
 }
 
 /* 
@@ -139,6 +140,7 @@ baby blue: #CDE4FF
 
 .entry-contents {
     display: flex;
+    padding: 10px;
 }
 
 .entry-inner-div {
@@ -152,6 +154,7 @@ baby blue: #CDE4FF
 
 .music-photo {
     max-width: 30%;
+    height: auto;
     padding-left: 10px;
 }
 

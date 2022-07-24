@@ -41,7 +41,7 @@ export default [
             {
                 id: 1,
                 entryTitle: "Boogie Brawl",
-                entryDescription: `Composed and produced Title Screen and Results Screen themes for "Boogie Brawl", a 
+                entryDescription: `Composed and produced Title Screen and Results Screen themes for "Boogie Brawl," a 
                 local 2-player rhythm fighting game made by Brown-RISD Game Developers.`,
                 image: boogieBrawlLogo,
                 audio: boogiebrawl,
@@ -49,7 +49,7 @@ export default [
             {
                 id: 2,
                 entryTitle: "High Stakes",
-                entryDescription: `Composed and prodouced all music for High Stakes, a turn-based strategy 
+                entryDescription: `Composed and prodouced all music for "High Stakes," a turn-based strategy 
                 game made by Brown-RISD Game Developers.`,
                 image: highStakesLogo,
                 audio: highstakes,

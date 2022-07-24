@@ -11,7 +11,7 @@ export default function AboutCard() {
                 Hello! My name is Ethan Jiang, and I am a programmer and composer 
                 currently studying Computer Science and Music at Brown University.
                 <p></p>
-                I love Korean food, Azure Moon Chapter 22 is kicking my ass, and CSS makes me want to cry.
+                I love listening to Ravel, eating Korean food, and playing Nintendo games.
                 <p></p>
                 Thanks for visiting!
               </p>
