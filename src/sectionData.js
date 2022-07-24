@@ -1,8 +1,8 @@
 import boogieBrawlLogo from "./images/BoogieBrawlLogo.png"
 import highStakesLogo from "./images/HighStakesLogo.jpg"
 import boogiebrawl from "./music/BoogieBrawlMenuMusic.mp3"
-import highstakes from "./music/HighStakesTitle.wav"
-import dance from "./music/DanceOfAFeverishMind.wav"
+import highstakes from "./music/HighStakes.mp3"
+import dance from "./music/DanceOfAFeverishMind.mp3"
 
 export default [
     {
