@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <div className='navbar'>
+        <nav className='navbar'>
             <a href='#about' className='navbar-option'>About</a>
-            <a href='experience' className='navbar-option'>Experience</a>
+            <a href='#experience' className='navbar-option'>Experience</a>
             <a href='#projects' className='navbar-option'>Projects</a>
             <a href='#music' className='navbar-option'>Music</a>
-        </div>
+        </nav>
     )
 }
 

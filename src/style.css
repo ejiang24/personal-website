@@ -6,12 +6,13 @@ body {
     margin: 0px;
     margin-top: 50px;
     font-family: Inter;
+    background-color: #FFF7D9
 }
 
 main {
    background-color: #FFF7D9;
    margin: 0px;
-   padding: 50px 100px;
+   padding: 40px 20px;
 }
 
 /*
@@ -27,8 +28,9 @@ dark blue: #457EC1
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-bottom: 30px;
     padding: 30px;
-    max-width: 800px;
+    max-width: 750px;
     min-height: 350px;
     max-height: 60%;
     border-style: solid;
@@ -37,18 +39,23 @@ dark blue: #457EC1
     box-shadow: 0px 5px 4px #27466A;
 }
 
-@media (max-width:1000px){
+.about--container:hover {
+    max-width: 780px;
+    transition: 0.2s;
+}
+
+@media (max-width:950px){
     .about--container {
         display: block;
         max-height: 90%;
         min-width: 400px;
         width: 300px;
-        margin: auto;
     }
 }
 
 .about--text-container {
     min-width: 300px;
+    max-width: 350px;
     padding: 10px;
 }
 
@@ -72,11 +79,11 @@ dark blue: #457EC1
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
+    z-index: 1000;
 }
 
 .navbar-option {
     color: white;
-    float: left;
     margin: 0px;
     text-decoration: none;
     text-align: center;
@@ -89,14 +96,26 @@ dark blue: #457EC1
 
 .section-card {
     background-color: #457EC1;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 870px;
+    border-radius: 10px;
+}
+
+.section-card:hover {
+    max-width: 890px;
+    transition: 0.2s;
 }
 
 .entry-card {
     background-color: #CDE4FF;
+    padding: 10px;
+    margin: 10px;
 }
 
 .footer {
-    height: 50px;
+    height: 60px;
     width: 100%;
     background-color: black;
     bottom: 0px;
@@ -115,5 +134,9 @@ h4 {
 
 p {
     font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;;
 }
 

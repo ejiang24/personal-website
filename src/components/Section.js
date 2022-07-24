@@ -5,15 +5,12 @@ import Entry from "./Entry"
 export default function Section(props) {
     const entryElements = props.entries.map(entry => {
         return (
-            <Entry 
-                title={entry.entryTitle} 
-                description={entry.entryDescription} 
-            />
+            <Entry entryData={entry}/>
         )
     })
 
     return (
-        <div className='section-card'>
+        <div id={props.title} className='section-card'>
             <h1>{props.title}</h1>
             {entryElements}
         </div>
