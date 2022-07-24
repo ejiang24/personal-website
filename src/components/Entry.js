@@ -7,7 +7,7 @@ export default function Entry(props) {
             <h4>{props.entryData.entryTitle}</h4>
             <div className='entry-contents'>
                 {props.entryData.image && 
-                <img className='music-photo' src={props.entryData.image} />}
+                <img className={props.entryData.audio ? 'music-photo' : 'entry-photo'} src={props.entryData.image} />}
                 <div className={props.entryData.image ? 'entry-inner-div' : 'entry-inner-div-NOPHOTO'}>
                     <p>{props.entryData.entryDescription}</p>
                     {props.entryData.audio && <ReactAudioPlayer 

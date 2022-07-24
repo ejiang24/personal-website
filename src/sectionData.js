@@ -3,6 +3,7 @@ import highStakesLogo from "./images/HighStakesLogo.jpg"
 import boogiebrawl from "./music/BoogieBrawlMenuMusic.mp3"
 import highstakes from "./music/HighStakes.mp3"
 import dance from "./music/DanceOfAFeverishMind.mp3"
+import brownLogo from "./images/BrownLogo.png"
 
 export default [
     {
@@ -11,7 +12,8 @@ export default [
         entries: [
             {
                 entryTitle: "Teaching Assistant — Program Design with Data Structures and Algorithms",
-                entryDescription: "yay money"
+                entryDescription: "yay money",
+                image: brownLogo
             },
         ]
     },
@@ -22,7 +24,8 @@ export default [
             {
                 id: "gendo",
                 entryTitle: "Gendo Taiko Website", 
-                entryDescription: "Lol, prob wrote like 10 lines of code"
+                entryDescription: `Lol, prob wrote like 10 lines of code,
+                but I basically know how to use Material UI (elemefayo)`
             },
             {
                 id: "personal",

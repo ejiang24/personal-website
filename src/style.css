@@ -46,7 +46,7 @@ dark blue: #457EC1
     max-height: 60%;
 }
 
-.about--container:hover {
+.about--border:hover {
     max-width: 780px;
     transition: 0.2s;
 }
@@ -61,6 +61,7 @@ dark blue: #457EC1
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.5px;
+    color: #2b261e
 }
 
 .contact {
@@ -95,6 +96,7 @@ li {
     align-items: center;
     z-index: 1000;
     box-shadow: 0px 3px 2px #cf9728;
+    background-image: linear-gradient(#eca72f, #fdb73d)
 }
 
 .navbar-option {
@@ -115,6 +117,7 @@ li {
     padding: 20px 10px 10px 10px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 30px;
     max-width: 870px;
     border-radius: 0px;
     box-shadow: 0px 4px 3px #cf9728;
@@ -149,6 +152,11 @@ baby blue: #CDE4FF
 
 .music-photo {
     max-width: 30%;
+    padding-left: 10px;
+}
+
+.entry-photo {
+    max-height: 100px;
     padding-left: 10px;
 }
 
@@ -190,6 +198,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     padding-top: 0px;
+    color: #2b261e;
 }
 
 a {
