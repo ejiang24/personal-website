@@ -8,7 +8,7 @@ export default function Entry(props) {
             <div className='entry-contents'>
                 {props.entryData.image && 
                 <img className='music-photo' src={props.entryData.image} />}
-                <div className={props.entryData.image ? 'entry-inner-div' : ''}>
+                <div className={props.entryData.image ? 'entry-inner-div' : 'entry-inner-div-NOPHOTO'}>
                     <p>{props.entryData.entryDescription}</p>
                     {props.entryData.audio && <ReactAudioPlayer 
                         src={props.entryData.audio}
@@ -16,7 +16,7 @@ export default function Entry(props) {
                         controls
                         className='audio-player'
                     />}
-            </div>
+                </div>
             </div>
         </div>
     )

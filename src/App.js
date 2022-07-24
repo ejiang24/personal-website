@@ -20,6 +20,7 @@ export default function App() {
     <div>
       <Navbar />
       <main>
+        <h1 className='hello'>Hi, I'm Ethan! >:)</h1>
         <AboutCard />   
         {sectionElements}
       </main>
