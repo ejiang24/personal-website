@@ -95,7 +95,7 @@ li {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     z-index: 1000;
-    box-shadow: 0px 3px 2px #cf9728;
+    box-shadow: 0px 3px 2px #c48f24;
     background-image: linear-gradient(#eca72f, #fdb73d);
 }
 
@@ -110,7 +110,7 @@ li {
 }
 
 .navbar-option:hover {
-    background-color: #A65B03;
+    background-color: #d8932b;
 }
 
 /* old background color: #457EC1*/
