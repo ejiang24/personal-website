@@ -36,21 +36,12 @@ dark blue: #457EC1
     border-style: solid;
     border-width: 10px;
     border-color: #21731e;
-    box-shadow: 0px 5px 4px #27466A;
+    box-shadow: 0px 5px 4px #154913;
 }
 
 .about--container:hover {
     max-width: 780px;
     transition: 0.2s;
-}
-
-@media (max-width:950px){
-    .about--container {
-        display: block;
-        max-height: 90%;
-        min-width: 400px;
-        width: 300px;
-    }
 }
 
 .about--text-container {
@@ -68,6 +59,7 @@ dark blue: #457EC1
     height: fit-content;
     max-height: 300px;
     margin: auto;
+    border-radius: 5px;
 }
 
 .navbar {
@@ -77,9 +69,10 @@ dark blue: #457EC1
     position: fixed;
     top: 0px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     z-index: 1000;
+    box-shadow: 0px 3px 2px #cf9728;
 }
 
 .navbar-option {
@@ -101,6 +94,7 @@ dark blue: #457EC1
     margin-top: 20px;
     max-width: 870px;
     border-radius: 10px;
+    box-shadow: 0px 4px 3px #2d5581;
 }
 
 .section-card:hover {
@@ -111,7 +105,21 @@ dark blue: #457EC1
 .entry-card {
     background-color: #CDE4FF;
     padding: 10px;
+    padding-top: 2px;
     margin: 10px;
+}
+
+.entry-contents {
+    display: flex;
+}
+
+.entry-inner-div {
+    display: block;
+    padding: 0px 14px;
+}
+
+.music-photo {
+    max-width: 30%;
 }
 
 .footer {
@@ -128,6 +136,14 @@ dark blue: #457EC1
     color: white;
 }
 
+.audio-player {
+    width: 80%;
+}
+
+h1 {
+    color: white;
+}
+
 h4 {
     font-size: 20px;
 }
@@ -138,5 +154,14 @@ p {
 
 html {
     scroll-behavior: smooth;;
+}
+
+@media (max-width:870px){
+    .about--container {
+        display: block;
+        max-height: 90%;
+        min-width: 400px;
+        width: 300px;
+    }
 }
 

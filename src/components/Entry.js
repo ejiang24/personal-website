@@ -1,17 +1,23 @@
 import React from "react"
 import ReactAudioPlayer from "react-audio-player"
-import music from "../music/BoogieBrawlMenuMusic.mp3"
 
-export default function Entry(props) {
+export default function Entry(props) {  
     return (
         <div className='entry-card'>
             <h4>{props.entryData.entryTitle}</h4>
-            <p>{props.entryData.entryDescription}</p>
-            {props.entryData.audio && <ReactAudioPlayer 
-                src={music}
-                autoPlay
-                controls
-            />}
+            <div className='entry-contents'>
+                {props.entryData.image && 
+                <img className='music-photo' src={props.entryData.image} />}
+                <div className={props.entryData.image ? 'entry-inner-div' : ''}>
+                    <p>{props.entryData.entryDescription}</p>
+                    {props.entryData.audio && <ReactAudioPlayer 
+                        src={props.entryData.audio}
+                        autoPlay='false'
+                        controls
+                        className='audio-player'
+                    />}
+            </div>
+            </div>
         </div>
     )
 }

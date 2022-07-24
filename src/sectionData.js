@@ -1,10 +1,16 @@
+import boogieBrawlLogo from "./images/BoogieBrawlLogo.png"
+import highStakesLogo from "./images/HighStakesLogo.jpg"
+import boogiebrawl from "./music/BoogieBrawlMenuMusic.mp3"
+import highstakes from "./music/HighStakesTitle.wav"
+import dance from "./music/DanceOfAFeverishMind.wav"
+
 export default [
     {
         id: 1,
         title: "experience",
         entries: [
             {
-                entryTitle: "Teaching Assistant — Program Design w/ Data Structures & Algorithms",
+                entryTitle: "Teaching Assistant — Program Design with Data Structures and Algorithms",
                 entryDescription: "yay money"
             },
         ]
@@ -32,29 +38,26 @@ export default [
             {
                 id: 1,
                 entryTitle: "Boogie Brawl",
-                entryDescription: `Composed and produced Title Screen and Results Screen themes for Boogie Brawl, a 
-                local rhythm fighting game made by Brown-RISD Game Developers.`,
-                audio: "./music/BoogieBrawlMenuMusic.mp3"
+                entryDescription: `Composed and produced Title Screen and Results Screen themes for "Boogie Brawl", a 
+                local 2-player rhythm fighting game made by Brown-RISD Game Developers.`,
+                image: boogieBrawlLogo,
+                audio: boogiebrawl,
             },
             {
                 id: 2,
                 entryTitle: "High Stakes",
                 entryDescription: `Composed and prodouced all music for High Stakes, a turn-based strategy 
-                game made by Brown-RISD Game Developers.`
+                game made by Brown-RISD Game Developers.`,
+                image: highStakesLogo,
+                audio: highstakes,
             },
             {
                 id: 3,
-                entryTitle: "The Wind",
-                entryDescription: "The Wind—written for violin, cello, clarinet, and taiko ensemble for dance ensemble—" +
-                "is a contemporary musical piece meant to evoke the ebb and flow in intensity of an autumn day breeze. " + 
-                "A coalescence of styles and art that span cross-cultural borders, The Wind exemplifies the possibilities " +
-                "of what it means to be an artist in today’s world. Collaboration with Attitude Dance Company."
-            },
-            {
-                id: 4,
                 entryTitle: "Dance of a Feverish Mind",
                 entryDescription: `Written in five days as part of the Boston Conservatory at Berklee: High School Composition Intensive (Jul. 2020),
-                this string quartet is a musical representation of a perpetually spinning mind riddled with anxiety.`
+                this string quartet is a musical representation of a perpetually spinning mind riddled with anxiety. 
+                Performed by the Julius Quartet.`,
+                audio: dance,
             }
         ]
     }

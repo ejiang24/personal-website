@@ -7,6 +7,7 @@ export default function Navbar() {
             <a href='#experience' className='navbar-option'>Experience</a>
             <a href='#projects' className='navbar-option'>Projects</a>
             <a href='#music' className='navbar-option'>Music</a>
+            <a className='navbar-option'>Resume</a>
         </nav>
     )
 }
