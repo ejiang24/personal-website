@@ -1,8 +1,27 @@
 import React from 'react'
+import moon from "../images/moon.png"
+import sun from "../images/sun.png"
+import Toggle from "react-toggle"
+
+require("react-toggle/style.css")
 
 export default function Navbar() {
+    function toggle() {
+        document.body.classList.toggle('dark-theme')
+    }
+
+    
     return (
         <nav className='navbar'>
+            <div className='toggle-container'>
+                <Toggle 
+                    className='toggle'
+                    onClick={toggle} 
+                    icons={{
+                    checked: <img className='toggle-icon' src={moon}/>,
+                    unchecked: <img className='toggle-icon' src={sun} />,
+                }}/>
+            </div>
             <a href='#about' className='navbar-option'>About</a>
             <a href='#experience' className='navbar-option'>Experience</a>
             <a href='#projects' className='navbar-option'>Projects</a>
