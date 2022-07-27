@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     scroll-padding-top: 70px;
-    transition: background-color 0.3s ease, color 0.4s ease;
+    transition: background-color 0.4s ease, color 0.6s ease, box-shadow 0.5s ease;
 }
 
 :root {
@@ -11,6 +11,7 @@
     --aboutText: #2b261e;
     --navbarLight: #fca542;
     --navbarDark: #f38a28;
+    --navbarHover: #d8702b;
     --navbarShadow: #d8702b;
     --borderBackground: #93ac84;
     --borderShadow: #6b835b;
@@ -20,6 +21,7 @@
     --entryTitle: #e6a930;
     --entryText: #2b261e;
     --footerLight: #2b261e;
+    --body: #fbffd9;
 }
 
 .light-theme {
@@ -29,6 +31,7 @@
     --aboutText: #2b261e;
     --navbarLight: #fca542;
     --navbarDark: #f38a28;
+    --navbarHover: #d8702b;
     --navbarShadow: #d8702b;
     --borderBackground: #93ac84;
     --borderShadow: #6b835b;
@@ -38,6 +41,7 @@
     --entryTitle: #e6a930;
     --entryText: #2b261e;
     --footerLight: #2b261e;
+    --body: #fbffd9;
 }
 
 /*
@@ -55,37 +59,72 @@
     --entryBody: #316174;
     --entryTitle: #3a7a8a;
     --aboutContainerBackground: #264027;
+
+    --entryBody: #316174
+    --sectionBackground: #33757e
 */
 
 .dark-theme {
     --aboutContainerBackground: #26403c;
     --mainBackground: #0D1F22;
-    --helloText: #f0f8da;
-    --aboutText: #f0f8da;
+    --helloText: #e4f8da;
+    --aboutText: #e8f7e1;
     --navbarLight: #2e7a5a;
     --navbarDark: #336b4f;
+    --navbarHover: #1c4930;
     --navbarShadow: #23374e;
     --borderBackground: #417266;
     --borderShadow: #2b4b44;
-    --sectionBackground: #33757e;
+    --sectionBackground: #2e6a72;
     --sectionShadow: #26515c;
-    --entryBody: #316174;
+    --entryBody: #284f5f;
     --entryTitle: #41899b;
     --entryText: white;
     --footerLight: #131b14;
+    --body: #12201b;
 }
 
 body {
     margin: 0px;
     margin-top: 50px;
     font-family: Inconsolata;
-    background-color: #fbffd9
+    background-color: var(--body)
 }
 
 main {
    background-color: var(--mainBackground);
    margin: 0px;
    padding: 40px 20px;
+}
+
+/*
+=========NAVBAR===========
+*/
+.navbar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px var(--navbarShadow);
+    background-image: linear-gradient(var(--navbarDark), var(--navbarLight));
+}
+
+.navbar-option {
+    color: white;
+    font-size: 18px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+    height: 50px;
+}
+
+.navbar-option:hover {
+    background-color: var(--navbarHover);
 }
 
 /*
@@ -108,7 +147,7 @@ dark blue: #457EC1
 
 .about--border {
     background-color: var(--borderBackground);
-    box-shadow: 0px 5px 4px var(--borderShadow);
+    box-shadow: 1px 5px 4px var(--borderShadow);
     padding: 10px;
     border-radius: 10px;
     margin: auto;
@@ -161,7 +200,7 @@ li {
 }
 
 .contact-icon {
-    max-height: 40px;
+    max-height: 30px;
     margin-right: 5px;
 }
 
@@ -174,32 +213,6 @@ li {
     border-radius: 5px;
 }
 
-.navbar {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    z-index: 1000;
-    box-shadow: 0px 2px 4px var(--navbarShadow);
-    background-image: linear-gradient(var(--navbarDark), var(--navbarLight));
-}
-
-.navbar-option {
-    color: white;
-    font-size: 18px;
-    margin: 0px;
-    text-decoration: none;
-    text-align: center;
-    padding: 16px;
-    height: 50px;
-}
-
-.navbar-option:hover {
-    background-color: #d8702b;
-}
 
 /*
 ========TOGGLE============
@@ -214,7 +227,7 @@ li {
     background-color: #3759a3;
 }
 .toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-    background-color: #3d61af;
+    background-color: #35569b;
 }
 .toggle.react-toggle--focus .react-toggle-thumb {
     -webkit-box-shadow: none;
@@ -234,9 +247,9 @@ li {
     padding: 20px 10px 10px 10px;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     max-width: 880px;
-    box-shadow: 0px 4px 3px var(--sectionShadow);
+    box-shadow: 1px 4px 3px var(--sectionShadow);
 }
 
 .section-card:hover {
@@ -296,7 +309,7 @@ baby blue: #CDE4FF
 }
 
 .audio-player {
-    width: 80%;
+    width: 400px;
 }
 
 h1 {
@@ -348,6 +361,9 @@ html {
     }
     .contact {
         display: block;
+    }
+    .audio-player {
+        width: 75%;
     }
     li {
         padding-top: 5px;
