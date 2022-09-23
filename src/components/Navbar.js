@@ -1,6 +1,4 @@
 import React from 'react'
-import moon from "../images/moon.png"
-import sun from "../images/sun.png"
 import Toggle from "react-toggle"
 
 require("react-toggle/style.css")
@@ -18,15 +16,15 @@ export default function Navbar() {
                     className='toggle'
                     onClick={toggle} 
                     icons={{
-                    checked: <img className='toggle-icon' src={moon}/>,
-                    unchecked: <img className='toggle-icon' src={sun} />,
+                    checked: <img className='toggle-icon' src="/images/moon.png" alt="Night mode icon"/>,
+                    unchecked: <img className='toggle-icon' src="/images/sun.png" alt="Day mode icon" />,
                 }}/>
             </div>
             <a href='#about' className='navbar-option'>About</a>
             <a href='#experience' className='navbar-option'>Experience</a>
             <a href='#projects' className='navbar-option'>Projects</a>
             <a href='#music' className='navbar-option'>Music</a>
-            <a className='navbar-option'>Resume</a>
+            <a target='_blank' href='https://drive.google.com/file/d/1eErUWw8ZbrpFsaFQb7uONwyq0SqZTdek/view?usp=sharing' className='navbar-option'>Resume</a>
         </nav>
     )
 }

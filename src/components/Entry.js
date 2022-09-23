@@ -4,15 +4,19 @@ import ReactAudioPlayer from "react-audio-player"
 export default function Entry(props) {  
     return (
         <div className='entry-card'>
-            <h4>{props.entryData.entryTitle}</h4>
+            <h2>{props.entryData.entryTitle}</h2>
             <div className='entry-contents'>
                 {props.entryData.image && 
-                <img className={props.entryData.audio ? 'music-photo' : 'entry-photo'} src={props.entryData.image} />}
+                <img 
+                    className={props.entryData.audio ? 'music-photo' : 'entry-photo'} 
+                    src={process.env.PUBLIC_URL + props.entryData.image}
+                    alt={props.entryData.imageAlt }
+                />}
                 <div className={props.entryData.image ? 'entry-inner-div' : 'entry-inner-div-NOPHOTO'}>
                     <p>{props.entryData.entryDescription}</p>
                     {props.entryData.audio && <ReactAudioPlayer 
                         src={props.entryData.audio}
-                        autoPlay='false'
+                        autoPlay={false}
                         controls
                         className='audio-player'
                     />}
