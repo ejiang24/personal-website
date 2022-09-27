@@ -31,8 +31,13 @@ export default [
             {
                 id: "gendo",
                 entryTitle: "Gendo Taiko Website", 
-                entryDescription: `Coded several pages of Gendo Taiko's website
-                using React and Material UI.`
+                entryDescription: `Collaborated with the Gendo Taiko ensemble to coded several pages of their website (React, Material UI).`
+            },
+            {
+                id: "sketchy",
+                entryTitle: "Sketchy",
+                entryDescription: `Developed a drawing app featuring creation, editing, and deletion of lines and shapes. Implemented undo and redo functionality using stacks as well as resize and moving
+                functionality using mouse events. (Java)`
             }
         ]
     },

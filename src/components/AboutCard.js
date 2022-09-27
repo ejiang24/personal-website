@@ -10,7 +10,7 @@ export default function AboutCard() {
               <p className='about--text'>
                 Hello! My name is Ethan Jiang, and I am a programmer and composer 
                 currently studying Computer Science and Music at Brown University.
-                I'm currently looking for Summer 2023 opportunities in SWE.
+                I'm currently looking for Summer 2023 opportunities in software.
                 <p></p>
                 In my free time I love to play drums with Gendo Taiko, play Nintendo games,
                 and listen to Maurice Ravel.
