@@ -4,7 +4,7 @@ import ReactAudioPlayer from "react-audio-player"
 export default function Entry(props) {  
     return (
         <div className='entry-card'>
-            <h2>{props.entryData.entryTitle}</h2>
+            <h2>{props.entryData.entryTitle} — {props.entryData.tools}</h2>           
             <div className='entry-contents'>
                 {props.entryData.image && 
                 <img 

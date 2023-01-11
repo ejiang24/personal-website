@@ -20,11 +20,14 @@ export default function Navbar() {
                     unchecked: <img className='toggle-icon' src="/images/sun.png" alt="Day mode icon" />,
                 }}/>
             </div>
-            <a href='#about' className='navbar-option'>About</a>
-            <a href='#experience' className='navbar-option'>Experience</a>
-            <a href='#projects' className='navbar-option'>Projects</a>
-            <a href='#music' className='navbar-option'>Music</a>
-            <a target='_blank' href='https://drive.google.com/file/d/1eErUWw8ZbrpFsaFQb7uONwyq0SqZTdek/view?usp=sharing' className='navbar-option'>Resume</a>
+            <div className='navbar-options'>
+                <a href='#about' className='navbar-option'>About</a>
+                <a href='#experience' className='navbar-option'>Experience</a>
+                <a href='#projects' className='navbar-option'>Projects</a>
+                <a href='#music' className='navbar-option'>Music</a>
+                <a target='_blank' href='https://drive.google.com/file/d/1cAW7DDeuyFzUz1OgXm1QZOCTcD2rrpkp/view?usp=sharing' className='navbar-option'>Resume</a>
+            </div>
+            
         </nav>
     )
 }
